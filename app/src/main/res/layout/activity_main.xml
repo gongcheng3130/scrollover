@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@mipmap/ic_launcher_round">
+
+    <com.cheng.testscrollovarlay.ScrollLayout
+        android:id="@+id/scroll_down_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <com.cheng.testscrollovarlay.ContentScrollView
+            android:id="@+id/content_scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:id="@+id/bottom_ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/text_view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="底部布局内容1" />
+
+                <com.cheng.testscrollovarlay.MyListView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white">
+
+                </com.cheng.testscrollovarlay.MyListView>
+
+                <TextView
+                    android:id="@+id/text_view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="底部布局内容2" />
+
+            </LinearLayout>
+
+        </com.cheng.testscrollovarlay.ContentScrollView>
+
+    </com.cheng.testscrollovarlay.ScrollLayout>
+
+</RelativeLayout>
